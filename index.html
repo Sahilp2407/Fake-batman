@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fake Batman Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      color: #f5f5f5;
+      overflow: hidden;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      filter: brightness(0.4);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    header, .container, footer {
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      color: #ffea00;
+      font-size: 4rem;
+      text-shadow: 0 0 20px #000, 0 0 10px #ffea00;
+    }
+
+    h2 {
+      color: #ffea00;
+      font-size: 2rem;
+    }
+
+    .btn {
+      background: #ffea00;
+      color: #000;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #fff000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.4);
+      color: #888;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+ <iframe class="video-bg"
+  src="https://www.youtube.com/embed/gMSIDdTv9Aw?start=5&autoplay=1&mute=1&loop=1&playlist=gMSIDdTv9Aw&controls=0&modestbranding=1&showinfo=0&rel=0"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+  <header data-aos="zoom-in">
+    <h1>I Am a Fake Batman</h1>
+    <p>Your (fake) Gotham journey begins here...</p>
+  </header>
+
+  <div class="container" data-aos="fade-up">
+    <h2>Join the Dark Side</h2>
+    <p>We help you complete fake missions, save fake cities, and pretend like a pro.</p>
+    <br />
+    <a href="batcave.html"><button class="btn" data-aos="zoom-in-up">Enter the Batcave</button></a>
+  </div>
+
+  <footer data-aos="fade-in">
+    <p>© 2025 Fake Batman Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
+</body>
+</html>
